@@ -1,0 +1,13 @@
+# Эти владельцы будут назначены для всех пулл-реквестов по умолчанию
+* @edvardpotter
+
+# Владельцы для файлов основной логики
+/src/ @edvardpotter
+
+# Владельцы для тестов
+/tests/ @edvardpotter
+
+# Владельцы для конфигурационных файлов
+*.json @edvardpotter
+*.xml @edvardpotter
+/.github/ @edvardpotter 
