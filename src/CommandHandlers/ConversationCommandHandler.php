@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Edvardpotter\TelegramBotConversation\CommandHandlers;
 
 use Closure;
-use Edvardpotter\TelegramBotConversation\Conversation\Conversation;
 use Edvardpotter\TelegramBotConversation\Conversation\Context;
+use Edvardpotter\TelegramBotConversation\Conversation\Conversation;
 use TelegramBot\Api\BotApi;
 use TelegramBot\Api\Types\Message;
 

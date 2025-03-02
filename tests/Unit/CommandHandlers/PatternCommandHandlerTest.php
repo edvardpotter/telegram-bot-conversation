@@ -23,7 +23,15 @@ class PatternCommandHandlerTest extends TestCase
         $handlerCalled = false;
         $capturedName = null;
 
-        $handler = function (Message $message, Conversation $conversation, BotApi $api, $name) use (&$handlerCalled, &$capturedName): void {
+        $handler = function (
+            Message $message,
+            Conversation $conversation,
+            BotApi $api,
+            $name,
+        ) use (
+            &$handlerCalled,
+            &$capturedName,
+        ): void {
             $handlerCalled = true;
             $capturedName = $name;
         };
@@ -51,7 +59,17 @@ class PatternCommandHandlerTest extends TestCase
         $capturedName = null;
         $capturedAdjective = null;
 
-        $handler = function (Message $message, Conversation $conversation, BotApi $api, $name, $adjective) use (&$handlerCalled, &$capturedName, &$capturedAdjective): void {
+        $handler = function (
+            Message $message,
+            Conversation $conversation,
+            BotApi $api,
+            $name,
+            $adjective,
+        ) use (
+            &$handlerCalled,
+            &$capturedName,
+            &$capturedAdjective,
+        ): void {
             $handlerCalled = true;
             $capturedName = $name;
             $capturedAdjective = $adjective;
@@ -80,7 +98,15 @@ class PatternCommandHandlerTest extends TestCase
         $handlerCalled = false;
         $capturedNumber = null;
 
-        $handler = function (Message $message, Conversation $conversation, BotApi $api, $number) use (&$handlerCalled, &$capturedNumber): void {
+        $handler = function (
+            Message $message,
+            Conversation $conversation,
+            BotApi $api,
+            $number,
+        ) use (
+            &$handlerCalled,
+            &$capturedNumber,
+        ): void {
             $handlerCalled = true;
             $capturedNumber = $number;
         };
@@ -108,7 +134,17 @@ class PatternCommandHandlerTest extends TestCase
         $capturedAmount = null;
         $capturedDish = null;
 
-        $handler = function (Message $message, Conversation $conversation, BotApi $api, $amount, $dish) use (&$handlerCalled, &$capturedAmount, &$capturedDish): void {
+        $handler = function (
+            Message $message,
+            Conversation $conversation,
+            BotApi $api,
+            $amount,
+            $dish,
+        ) use (
+            &$handlerCalled,
+            &$capturedAmount,
+            &$capturedDish
+        ): void {
             $handlerCalled = true;
             $capturedAmount = $amount;
             $capturedDish = $dish;
@@ -138,7 +174,17 @@ class PatternCommandHandlerTest extends TestCase
         $capturedNumber = null;
         $capturedAge = null;
 
-        $handler = function (Message $message, Conversation $conversation, BotApi $api, $number, $age) use (&$handlerCalled, &$capturedNumber, &$capturedAge): void {
+        $handler = function (
+            Message $message,
+            Conversation $conversation,
+            BotApi $api,
+            $number,
+            $age,
+        ) use (
+            &$handlerCalled,
+            &$capturedNumber,
+            &$capturedAge,
+        ): void {
             $handlerCalled = true;
             $capturedNumber = $number;
             $capturedAge = $age;

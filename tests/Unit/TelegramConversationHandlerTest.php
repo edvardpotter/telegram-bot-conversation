@@ -10,9 +10,9 @@ use Edvardpotter\TelegramBotConversation\CallbackData\CallbackDataStorageInterfa
 use Edvardpotter\TelegramBotConversation\CommandBuilder;
 use Edvardpotter\TelegramBotConversation\CommandHandlers\CommandHandlerInterface;
 use Edvardpotter\TelegramBotConversation\CommandHandlers\InlineCommandHandler;
+use Edvardpotter\TelegramBotConversation\Conversation\Context;
 use Edvardpotter\TelegramBotConversation\Conversation\Conversation;
 use Edvardpotter\TelegramBotConversation\Conversation\ConversationStorageInterface;
-use Edvardpotter\TelegramBotConversation\Conversation\Context;
 use Edvardpotter\TelegramBotConversation\TelegramConversationHandler;
 use Mockery;
 use Mockery\MockInterface;

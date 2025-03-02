@@ -13,9 +13,13 @@ class PatternCommandHandler implements CommandHandlerInterface
 {
     protected string $name;
     protected string $pattern;
+    /** @var array<string> */
     protected array $paramNames = [];
     protected bool $isRegex;
 
+    /**
+     * @param array<string> $paramNames
+     */
     public function __construct(
         protected BotApi $api,
         protected Closure $handler,
@@ -84,6 +88,9 @@ class PatternCommandHandler implements CommandHandlerInterface
         return !empty($this->extractParameters($text));
     }
 
+    /**
+     * @return array<string, string|null>|array<int, string>
+     */
     protected function extractParameters(string $text): array
     {
         if ($this->isRegex) {
@@ -93,6 +100,9 @@ class PatternCommandHandler implements CommandHandlerInterface
         return $this->extractFromTemplate($text);
     }
 
+    /**
+     * @return array<string, string>
+     */
     protected function extractFromTemplate(string $text): array
     {
         $pattern = $this->pattern;
@@ -116,6 +126,9 @@ class PatternCommandHandler implements CommandHandlerInterface
         return [];
     }
 
+    /**
+     * @return array<string, string|null>|array<int, string>
+     */
     protected function extractFromRegex(string $text): array
     {
         // Если шаблон не содержит ограничителей, добавляем их
