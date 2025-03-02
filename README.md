@@ -1,5 +1,7 @@
 # Telegram Conversation Library
 
+[![Latest Stable Version](https://poser.pugx.org/edvardpotter/telegram-bot-conversation/v?style=for-the-badge)](https://packagist.org/packages/edvardpotter/telegram-bot-conversation) [![Total Downloads](https://poser.pugx.org/edvardpotter/telegram-bot-conversation/downloads?style=for-the-badge)](https://packagist.org/packages/edvardpotter/telegram-bot-conversation) [![Latest Unstable Version](https://poser.pugx.org/edvardpotter/telegram-bot-conversation/v/unstable?style=for-the-badge)](https://packagist.org/packages/edvardpotter/telegram-bot-conversation) [![License](https://poser.pugx.org/edvardpotter/telegram-bot-conversation/license?style=for-the-badge)](https://packagist.org/packages/edvardpotter/telegram-bot-conversation) [![PHP Version Require](https://poser.pugx.org/edvardpotter/telegram-bot-conversation/require/php?style=for-the-badge)](https://packagist.org/packages/edvardpotter/telegram-bot-conversation)
+
 A library for creating Telegram bots with support for declarative command descriptions and conversations (dialogue states).
 
 ## Features
