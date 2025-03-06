@@ -15,7 +15,7 @@ A library for creating Telegram bots with support for declarative command descri
 ## Installation
 
 ```bash
-composer require edvardpotter/telegram-conversation
+composer require edvardpotter/telegram-bot-conversation
 ```
 
 ## Usage
